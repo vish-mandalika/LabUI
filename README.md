@@ -1,7 +1,7 @@
 # LabUI
 A Python-based GUI to control the FLAIR Lab experimental setup
 ## Overview:
-As part of my Final Year Project as a Mechatronics student, I was assigned the task to develop a graphical user interface (GUI) for Monash’s University’s FLAIR Lab. Dr.Jisheng Zhao was investigating flow induced vibrations (FIVs) of 3D buff bodies and required an application that could communicate with the lab hardware. The application needed to handle raw experimental data, provide notifications to the user and display a live data feed. 
+As part of my Final Year Project as a Mechatronics student, I was assigned the task to develop a graphical user interface (GUI) for Monash University’s FLAIR Lab. Dr.Jisheng Zhao was investigating flow induced vibrations (FIVs) of 3D buff bodies and required an application that could communicate with the lab hardware. The application needed to handle raw experimental data, provide notifications to the user and display a live data feed. 
 
 The lab setup consisted of an air-bearing system attached with a servo motor submerged in a water channel. By varying the water channel velocity and motor movement, the FIVs of the system were to be measured. The servo motor was controlled by Beckhoff Automation GmbH Hardware which was interfaced with the Beckhoff TwinCAT 3 software. 
 
@@ -29,3 +29,9 @@ pip install -r requirements.txt
 
 ## Improvements:
 *Currently, there is an issue with simultaneously displaying the live feed on the plot and running the progress bar. Some modification is required.
+
+### Home screen
+![Home screen](/C:/Users/Viswas/Google Drive/MU2021/FYP/FYP GitHub Photos/MainScreen.jpg)
+
+### Transitioning setup
+
