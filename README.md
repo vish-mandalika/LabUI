@@ -7,7 +7,7 @@ The lab setup consisted of an air-bearing system attached with a servo motor sub
 
 To control this setup, I developed a Python-based GUI using PyQt5 called LabUI (LUI). LUI is capable of displaying live experimental data to the user while logging the raw data to a local csv file. LUI communicates with TwinCAT 3 to control the experimental setup and retrieve the data from it. Upon completion of the experiment, LUI can notify the user via email with any additional notes attached in the body of the email. 
 
-*Due to the COVID-19 lockdown restrictions and the FLAIR Lab being used for various projects, LUI is yet to be tested with the actual setup in the lab. The files in this repository essentially simulate an ideal working case, however once the hardware is interfaced with TwinCAT 3, LUI should run smoothly.
+*Due to the COVID-19 lockdown restrictions and the FLAIR Lab being used for various projects, LUI is yet to be tested with the actual setup in the lab. The files in this repository essentially simulate an ideal working case, however once the hardware is interfaced with TwinCAT 3, LUI should run smoothly.*
 
 ## How to install:
 1) Clone this repo to your chosen directory
@@ -16,9 +16,16 @@ To control this setup, I developed a Python-based GUI using PyQt5 called LabUI (
 ```Python
 pip install -r requirements.txt
 ```
-4)Now if you run LUI.py, LUI should open up
+4) Now if you run LUI.py, LUI should open up
 
 ## Usage:
 1) Open the TwinCAT3 file, and launch it over the port
 2) Run LUI.py
-3) Enter email / subject
+3) Enter email / subject / notes (optional)
+4) Select path to store raw data
+5) Press one of the buttons to run that experiment
+6) Let the experimental setup transition to the corresponding configuration
+7) Raw data is stored to your chosen path
+
+## Improvements:
+*Currently, there is an issue with simultaneously displaying the live feed on the plot and running the progress bar. Some modification is required.
