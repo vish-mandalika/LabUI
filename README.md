@@ -31,7 +31,12 @@ pip install -r requirements.txt
 *Currently, there is an issue with simultaneously displaying the live feed on the plot and running the progress bar. Some modification is required.
 
 ## Images:
+### Main screen
 ![MainScreen](https://user-images.githubusercontent.com/70189328/128632159-8ecc2882-2b45-4458-b888-d358e811a579.jpg)
+
+### Transitioning setup
 ![SetupTransition](https://user-images.githubusercontent.com/70189328/128632165-41b7d005-55c3-4da5-9b16-e5a0b56067a9.jpg)
+
+### Experiment completed
 ![ExperimentComplete](https://user-images.githubusercontent.com/70189328/128632167-b4197dd3-777d-4b2f-b6fc-c4d1619ef934.jpg)
 
