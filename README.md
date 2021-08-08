@@ -13,6 +13,6 @@ To control this setup, I developed a Python-based GUI using PyQt5 called LabUI (
 1) Clone this repo to your chosen directory
 2) Make sure you have TwinCAT 3 installed (installation guide)
 3) In your terminal run:
-4)```Python
+```Python
 pip install -r requirements.txt
 ```
