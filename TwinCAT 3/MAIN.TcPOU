@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{8e56532f-0f03-40c6-a1a3-b508365bd9a4}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	arr1 : ARRAY [1..100] OF REAL;
+	arrayreset : ARRAY [1..100] OF REAL;
+	t : ARRAY [1..100]OF REAL;
+	i : INT := 1;
+	switch : INT := 0;
+		
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+	CASE switch OF
+	
+		1:
+		i := 1;
+		t := arrayreset;
+		arr1 := arrayreset;
+		WHILE i<101 DO
+			IF i = 1 
+			THEN t[i] := 0.001;
+			ELSE t[i] := t[i-1] + 0.001;
+			END_IF;
+			
+			arr1[i] := SIN(t[i]);
+			i := i +1;
+		END_WHILE
+		
+		2:
+		i := 1;
+		t := arrayreset;
+		arr1 := arrayreset;
+		WHILE i<101 DO
+			IF i = 1 
+			THEN t[i] := 0.001;
+			ELSE t[i] := t[i-1] + 0.001;
+			END_IF;
+			
+			arr1[i] := COS(t[i]);
+			i := i +1;
+		END_WHILE
+		
+		3:
+		i := 1;
+		t := arrayreset;
+		arr1 := arrayreset;
+		WHILE i<101 DO
+			IF i = 1 
+			THEN t[i] := 0.001;
+			ELSE t[i] := t[i-1] + 0.001;
+			END_IF;
+			
+			arr1[i] := 4* SIN(t[i]);
+			i := i +1;
+		END_WHILE
+		
+		
+	END_CASE
+	//i := 1;
+	//t := 0;
+	//start := 0;
+	//arr1 := arrayreset;
+	
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="73" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="106" Count="0" />
+      <LineId Id="104" Count="1" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="122" Count="1" />
+      <LineId Id="125" Count="0" />
+      <LineId Id="124" Count="0" />
+      <LineId Id="100" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="34" Count="1" />
+      <LineId Id="108" Count="1" />
+      <LineId Id="107" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="126" Count="2" />
+      <LineId Id="39" Count="0" />
+      <LineId Id="129" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="37" Count="1" />
+      <LineId Id="41" Count="1" />
+      <LineId Id="111" Count="1" />
+      <LineId Id="110" Count="0" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="130" Count="2" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="133" Count="0" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="43" Count="0" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="57" Count="0" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="68" Count="0" />
+      <LineId Id="70" Count="0" />
+      <LineId Id="67" Count="0" />
+      <LineId Id="72" Count="0" />
+      <LineId Id="69" Count="0" />
+      <LineId Id="54" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
