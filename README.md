@@ -11,8 +11,14 @@ To control this setup, I developed a Python-based GUI using PyQt5 called LabUI (
 
 ## How to install:
 1) Clone this repo to your chosen directory
-2) Make sure you have TwinCAT 3 installed (installation guide)
+2) Make sure you have [TwinCAT 3 installed](https://www.youtube.com/watch?v=AEhG1JLPl3w)
 3) In your terminal run:
 ```Python
 pip install -r requirements.txt
 ```
+4)Now if you run LUI.py, LUI should open up
+
+## Usage:
+1) Open the TwinCAT3 file, and launch it over the port
+2) Run LUI.py
+3) Enter email / subject
